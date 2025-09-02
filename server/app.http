@@ -1,0 +1,56 @@
+### Create customer
+POST http://localhost:5001/api/customers
+Content-Type: application/json
+
+{
+  "first_name": "rohit",
+  "last_name": "Patel",
+  "phone_number": "9000000011"
+}
+
+
+### List customers (search/sort/paginate)
+GET http://localhost:5001/api/customers?q=sha&page=1&limit=5&sortBy=first_name&order=asc
+Accept: application/json
+
+### Get one customer with addresses
+GET http://localhost:5001/api/customers/2
+
+### Update customer
+PUT http://localhost:5001/api/customers/3
+Content-Type: application/json
+
+{
+  "phone_number": "9000000099"
+}
+
+### Delete customer
+DELETE http://localhost:5001/api/customers/4
+
+### Add address
+POST http://localhost:5001/api/customers/2/addresses
+Content-Type: application/json
+
+{
+  "address_details": "12 MG Road, Flat 3B",
+  "city": "Pune",
+  "state": "MH",
+  "pin_code": "411001"
+}
+
+### List addresses
+GET http://localhost:5001/api/customers/1/addresses
+
+### Update address
+PUT http://localhost:5001/api/addresses/3
+Content-Type: application/json
+
+{
+  "city": "Mumbai",
+  "pin_code": "400001"
+}
+
+### Delete address
+DELETE http://localhost:5001/api/addresses/4
+
+
