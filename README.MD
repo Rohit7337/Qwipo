@@ -49,7 +49,7 @@ The app demonstrates customer management with multiple addresses, including vali
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/<your-username>/customer-management-app.git
+git clone https://github.com/Rohit7337/customer-management-app.git
 cd customer-management-app
 ```
 
